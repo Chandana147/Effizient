@@ -85,7 +85,7 @@ const CustomizedSOPForm = () => {
     e.preventDefault();
     
     axios
-      .post("https://sop-backend-aeue.onrender.com/", {
+      .post("https://sop-backend-aeue.onrender.com/user", {
         fullName: formData.fullName,
         email: formData.email,
         age: formData.age,
