@@ -13,7 +13,7 @@ console.log(process.env.User)
 const app = express();
 app.use(
   cors({
-    origin: "*",
+        origin: ["https://deluxe-kitten-8401f7.netlify.app/","https://64f5f80c00f4f606ecf36ca1--deluxe-kitten-8401f7.netlify.app/","http://localhost:3000"],
   })
 );
 mongoose.connect(process.env.MONGO_STRING, {
