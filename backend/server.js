@@ -13,7 +13,7 @@ console.log(process.env.User)
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "*",
   })
 );
 mongoose.connect(process.env.MONGO_STRING, {
